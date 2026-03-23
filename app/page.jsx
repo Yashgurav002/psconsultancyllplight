@@ -19,52 +19,55 @@ export default function Home() {
       <main>
         <Hero />
 
-        {/* Organic SVG wave divider */}
+        {/* Organic SVG divider */}
         <div className="relative -mt-1 overflow-hidden">
-          <svg viewBox="0 0 1440 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full" preserveAspectRatio="none">
-            <path d="M0 0 Q360 50 720 25 Q1080 0 1440 35 L1440 50 L0 50 Z" fill="#ffffff"/>
+          <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full" preserveAspectRatio="none">
+            <path d="M0 0 Q360 60 720 30 Q1080 0 1440 40 L1440 60 L0 60 Z" fill="#0a120a"/>
           </svg>
         </div>
 
         <About />
 
-        <div className="section-divider mx-auto max-w-7xl"/>
+        <div className="section-divider mx-auto max-w-7xl" />
 
         <Services />
 
+        {/* Organic divider */}
         <div className="relative overflow-hidden">
-          <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full" preserveAspectRatio="none">
-            <path d="M0 40 Q360 0 720 20 Q1080 40 1440 10 L1440 0 L0 0 Z" fill="#F8F7F4"/>
+          <svg viewBox="0 0 1440 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full" preserveAspectRatio="none">
+            <path d="M0 50 Q360 0 720 25 Q1080 50 1440 10 L1440 0 L0 0 Z" fill="#0a120a"/>
           </svg>
         </div>
 
         <Programs />
 
-        <div className="section-divider mx-auto max-w-7xl"/>
+        <div className="section-divider mx-auto max-w-7xl" />
 
         <Partnerships />
 
         <Stats />
 
+        {/* Organic divider */}
         <div className="relative overflow-hidden -mt-1">
-          <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full" preserveAspectRatio="none">
-            <path d="M0 0 Q480 40 960 15 Q1200 5 1440 30 L1440 40 L0 40 Z" fill="#ffffff"/>
+          <svg viewBox="0 0 1440 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full" preserveAspectRatio="none">
+            <path d="M0 0 Q480 50 960 20 Q1200 5 1440 35 L1440 50 L0 50 Z" fill="#0a120a"/>
           </svg>
         </div>
 
         <Testimonials />
 
-        <div className="section-divider mx-auto max-w-7xl"/>
+        <div className="section-divider mx-auto max-w-7xl" />
 
         <WhyUs />
 
-        <div className="section-divider mx-auto max-w-7xl"/>
+        <div className="section-divider mx-auto max-w-7xl" />
 
         <FAQ />
 
+        {/* Organic divider */}
         <div className="relative overflow-hidden">
-          <svg viewBox="0 0 1440 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full" preserveAspectRatio="none">
-            <path d="M0 40 Q360 0 720 20 Q1080 40 1440 10 L1440 0 L0 0 Z" fill="#F8F7F4"/>
+          <svg viewBox="0 0 1440 50" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full" preserveAspectRatio="none">
+            <path d="M0 50 Q360 0 720 25 Q1080 50 1440 15 L1440 0 L0 0 Z" fill="#0a120a"/>
           </svg>
         </div>
 
