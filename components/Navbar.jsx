@@ -1,13 +1,16 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from "next/image";
+
 
 const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
-  { label: 'Programs', href: '#programs' },
-  { label: 'Partnerships', href: '#partnerships' },
+  // { label: 'Programs', href: '#programs' },
+  // { label: 'Partnerships', href: '#partnerships' },
+  { label: 'Our Academy', href: '#ouracademy' },
   { label: 'Testimonials', href: '#testimonials' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -51,11 +54,10 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
-          scrolled
-            ? 'bg-dark-900/95 backdrop-blur-md border-b border-pitch-900/60 shadow-lg shadow-black/30'
-            : 'bg-transparent'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${scrolled
+          ? 'bg-dark-900/95 backdrop-blur-md border-b border-pitch-900/60 shadow-lg shadow-black/30'
+          : 'bg-transparent'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
@@ -74,6 +76,14 @@ export default function Navbar() {
                   <path d="M11 11 Q20 6 29 11 Q34 20 29 29 Q20 34 11 29 Q6 20 11 11Z" stroke="#4ade80" strokeWidth="0.6" fill="none"/>
                 </svg>
               </div> */}
+              <div className="relative w-9 h-9 flex-shrink-0">
+                <Image
+                  src="/smalllogo.jpeg"
+                  alt="Logo"
+                  fill
+                  className="object-contain rounded-full "
+                />
+              </div>
               <div>
                 <div className="font-heading font-bold text-base leading-tight text-white group-hover:text-pitch-400 transition-colors">
                   PIONEER
@@ -91,11 +101,10 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={(e) => { e.preventDefault(); handleNavClick(link.href) }}
-                  className={`px-3.5 py-2 text-sm font-heading font-medium rounded-md transition-all duration-200 ${
-                    activeSection === link.href.slice(1)
-                      ? 'text-pitch-400 bg-pitch-950/60'
-                      : 'text-gray-400 hover:text-white hover:bg-white/5'
-                  }`}
+                  className={`px-3.5 py-2 text-sm font-heading font-medium rounded-md transition-all duration-200 ${activeSection === link.href.slice(1)
+                    ? 'text-pitch-400 bg-pitch-950/60'
+                    : 'text-gray-400 hover:text-white hover:bg-white/5'
+                    }`}
                 >
                   {link.label}
                 </a>

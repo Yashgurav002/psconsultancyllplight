@@ -47,12 +47,11 @@ function FAQItem({ faq, index }) {
           </span>
         </div>
         <div
-          className={`w-7 h-7 rounded-full border border-pitch-800/50 flex items-center justify-center flex-shrink-0 transition-all duration-300 ${
-            open ? 'bg-pitch-700 border-pitch-600 rotate-45' : 'bg-transparent'
-          }`}
+          className={`w-7 h-7 rounded-full border border-pitch-800/50 flex items-center justify-center flex-shrink-0 transition-all duration-300 ${open ? 'bg-pitch-700 border-pitch-600 rotate-45' : 'bg-transparent'
+            }`}
         >
           <svg className="w-3.5 h-3.5 text-pitch-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4"/>
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
           </svg>
         </div>
       </button>

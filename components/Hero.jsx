@@ -4,9 +4,9 @@ import { useEffect, useRef, useState } from 'react'
 
 const stats = [
   { value: 500, suffix: '+', label: 'Players Trained' },
-  { value: 50, suffix: '+', label: 'Programs' },
+  { value: 20, suffix: '+', label: 'Programs' },
   { value: 15, suffix: '+', label: 'Partner Clubs' },
-  { value: 5, suffix: '+', label: 'Countries' },
+  { value: 3, suffix: '+', label: 'Countries' },
 ]
 
 function AnimatedCounter({ target, suffix, duration = 2000 }) {
@@ -100,34 +100,34 @@ export default function Hero() {
           xmlns="http://www.w3.org/2000/svg"
         >
           {/* Pitch outline */}
-          <rect x="120" y="80" width="1200" height="740" rx="4" stroke="#4ade80" strokeWidth="1.5" fill="none"/>
+          <rect x="120" y="80" width="1200" height="740" rx="4" stroke="#4ade80" strokeWidth="1.5" fill="none" />
           {/* Center line */}
-          <line x1="720" y1="80" x2="720" y2="820" stroke="#4ade80" strokeWidth="1.5"/>
+          <line x1="720" y1="80" x2="720" y2="820" stroke="#4ade80" strokeWidth="1.5" />
           {/* Center circle */}
-          <circle cx="720" cy="450" r="110" stroke="#4ade80" strokeWidth="1.5" fill="none"/>
+          <circle cx="720" cy="450" r="110" stroke="#4ade80" strokeWidth="1.5" fill="none" />
           {/* Center spot */}
-          <circle cx="720" cy="450" r="4" fill="#4ade80"/>
+          <circle cx="720" cy="450" r="4" fill="#4ade80" />
           {/* Left penalty box */}
-          <rect x="120" y="250" width="220" height="400" stroke="#4ade80" strokeWidth="1.2" fill="none"/>
+          <rect x="120" y="250" width="220" height="400" stroke="#4ade80" strokeWidth="1.2" fill="none" />
           {/* Left 6-yard box */}
-          <rect x="120" y="355" width="80" height="190" stroke="#4ade80" strokeWidth="1" fill="none"/>
+          <rect x="120" y="355" width="80" height="190" stroke="#4ade80" strokeWidth="1" fill="none" />
           {/* Left penalty spot */}
-          <circle cx="272" cy="450" r="3" fill="#4ade80"/>
+          <circle cx="272" cy="450" r="3" fill="#4ade80" />
           {/* Left penalty arc */}
-          <path d="M 340 330 Q 400 450 340 570" stroke="#4ade80" strokeWidth="1" fill="none"/>
+          <path d="M 340 330 Q 400 450 340 570" stroke="#4ade80" strokeWidth="1" fill="none" />
           {/* Right penalty box */}
-          <rect x="1100" y="250" width="220" height="400" stroke="#4ade80" strokeWidth="1.2" fill="none"/>
+          <rect x="1100" y="250" width="220" height="400" stroke="#4ade80" strokeWidth="1.2" fill="none" />
           {/* Right 6-yard box */}
-          <rect x="1240" y="355" width="80" height="190" stroke="#4ade80" strokeWidth="1" fill="none"/>
+          <rect x="1240" y="355" width="80" height="190" stroke="#4ade80" strokeWidth="1" fill="none" />
           {/* Right penalty spot */}
-          <circle cx="1168" cy="450" r="3" fill="#4ade80"/>
+          <circle cx="1168" cy="450" r="3" fill="#4ade80" />
           {/* Right penalty arc */}
-          <path d="M 1100 330 Q 1040 450 1100 570" stroke="#4ade80" strokeWidth="1" fill="none"/>
+          <path d="M 1100 330 Q 1040 450 1100 570" stroke="#4ade80" strokeWidth="1" fill="none" />
           {/* Corner arcs */}
-          <path d="M 120 80 Q 140 80 140 100" stroke="#4ade80" strokeWidth="1" fill="none"/>
-          <path d="M 1320 80 Q 1300 80 1300 100" stroke="#4ade80" strokeWidth="1" fill="none"/>
-          <path d="M 120 820 Q 140 820 140 800" stroke="#4ade80" strokeWidth="1" fill="none"/>
-          <path d="M 1320 820 Q 1300 820 1300 800" stroke="#4ade80" strokeWidth="1" fill="none"/>
+          <path d="M 120 80 Q 140 80 140 100" stroke="#4ade80" strokeWidth="1" fill="none" />
+          <path d="M 1320 80 Q 1300 80 1300 100" stroke="#4ade80" strokeWidth="1" fill="none" />
+          <path d="M 120 820 Q 140 820 140 800" stroke="#4ade80" strokeWidth="1" fill="none" />
+          <path d="M 1320 820 Q 1300 820 1300 800" stroke="#4ade80" strokeWidth="1" fill="none" />
           {/* Grass stripes (subtle) */}
           {[...Array(12)].map((_, i) => (
             <line
@@ -198,7 +198,7 @@ export default function Hero() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </button>
-              <button
+              {/* <button
                 onClick={scrollToPrograms}
                 className="group inline-flex items-center justify-center gap-2.5 px-8 py-4 border border-gold-500/40 text-gold-400 hover:border-gold-400 hover:bg-gold-500/10 font-heading font-bold text-sm tracking-wide rounded-full transition-all duration-300"
               >
@@ -207,7 +207,7 @@ export default function Hero() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
                 <span>EXPLORE PROGRAMS</span>
-              </button>
+              </button> */}
             </div>
 
             {/* Trust indicators */}
