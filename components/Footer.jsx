@@ -7,7 +7,7 @@ const footerLinks = {
   Company: [
     { label: 'About Us', href: '#about' },
     { label: 'Our Team', href: '#about' },
-    { label: 'Partnerships', href: '#partnerships' },
+    // { label: 'Partnerships', href: '#partnerships' },
     { label: 'Why Pioneer', href: '#why-us' },
   ],
   // Programs: [
@@ -24,7 +24,7 @@ const footerLinks = {
   ],
   Contact: [
     { label: 'Book Consultation', href: '#contact' },
-    { label: 'FAQ', href: '#faq' },
+    // { label: 'FAQ', href: '#faq' },
     { label: 'Testimonials', href: '#testimonials' },
     { label: 'Get Started', href: '#contact' },
   ],

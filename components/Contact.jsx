@@ -10,8 +10,8 @@ const contactInfo = [
       </svg>
     ),
     label: 'WhatsApp',
-    value: '+91 7028981188',
-    href: 'https://wa.me/917028981188?text=Hi%20I%20am%20interested%20in%20Sportify%20programs',
+    value: '+91 9834187364',
+    href: 'https://wa.me/919834187364',
     color: '#25D366',
   },
   {
@@ -21,8 +21,8 @@ const contactInfo = [
       </svg>
     ),
     label: 'Email',
-    value: 'info@pioneersports.in',
-    href: 'mailto:info@pioneersports.in',
+    value: 'hardik.pioneersports@gmail.com',
+    href: 'mailto:hardik.pioneersports@gmail.com',
     color: '#fbbf24',
   },
   {
@@ -33,7 +33,7 @@ const contactInfo = [
       </svg>
     ),
     label: 'Office',
-    value: 'Ahmedabad, Gujarat, India',
+    value: ' Mumbai, Maharashtra, India',
     href: null,
     color: '#a78bfa',
   },
@@ -143,7 +143,7 @@ export default function Contact() {
 
               {/* WhatsApp Button */}
               <a
-                href="https://wa.me/917028981188?text=Hi%20I%20am%20interested%20in%20Sportify%20programs"
+                href="https://wa.me/919834187364"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 px-8 py-4 bg-[#25D366] hover:bg-[#20ba5a] text-white font-heading font-bold rounded-xl text-sm md:text-base transition-all duration-300 hover:scale-105 shadow-lg"

@@ -7,8 +7,8 @@ const testimonials = [
     name: 'Arjun Mehta',
     role: 'Player · Age 19',
     location: 'Mumbai, Maharashtra',
-    content: 'Pioneer Sports completely changed the trajectory of my career. I went from playing in local Mumbai leagues to completing a trial at a Spanish academy — something I never thought was possible. The coaching methodology, the contacts, the entire system Hardik has built is unlike anything available in India. I now train every day knowing exactly what standard I need to hit internationally.',
-    outcome: 'Completed trial at Spanish academy, now in final selection',
+    content: 'Pioneer Sports completely changed the trajectory of my career. I went from playing in local leagues to playing a trial at a Spanish academy — something I never thought was possible.I now train every day knowing exactly what standard I need to hit internationally.',
+    outcome: 'Trial at Spanish academy',
     avatar: 'AM',
     avatarBg: 'linear-gradient(135deg, #15803d, #22c55e)',
     highlight: '#4ade80',
@@ -16,23 +16,33 @@ const testimonials = [
   {
     name: 'Priya Sharma',
     role: 'Parent',
-    location: 'Ahmedabad, Gujarat',
-    content: 'As a parent, you always worry whether a consultancy is genuine or just taking money. Pioneer Sports was completely transparent from day one. Hardik sat with us for over an hour explaining exactly what the program involved, what was realistic, and what wasn\'t. My son has grown not just as a footballer but as a disciplined young man. The international camp experience was genuinely life-changing.',
-    outcome: 'Son enrolled in International Training Camp — Dubai edition',
+    location: 'Mumbai, Maharashtra',
+    content: 'As a parent, you always worry whether a consultancy is genuine or just taking money. Pioneer Sports was completely transparent from day one. Hardik sir sat with us for over an hour explaining exactly what the program involved, what was realistic, and what wasn\'t. My son has grown not just as a footballer but as a disciplined young man.',
+    outcome: 'Son enrolled in Pioneer Training Camp ',
     avatar: 'PS',
     avatarBg: 'linear-gradient(135deg, #d97706, #f59e0b)',
     highlight: '#fbbf24',
   },
   {
-    name: 'Coach Rajesh Nair',
-    role: 'Football Coach · ISL Academy',
-    location: 'Kochi, Kerala',
-    content: 'I\'ve seen many consultancies come and go but Pioneer operates on a completely different level. The European methodology they\'ve embedded into their training philosophy is something I\'ve only seen in foreign setups. Hardik\'s Real Madrid education is clearly not just a credential — it\'s visible in every drill design and development framework. I actively recommend players to Pioneer because I know they\'ll come back better.',
-    outcome: 'Referred 12 players from his academy to Pioneer programs',
-    avatar: 'RN',
-    avatarBg: 'linear-gradient(135deg, #7c3aed, #a78bfa)',
-    highlight: '#a78bfa',
+    name: 'Rahul Verma',
+    role: 'Parent',
+    location: 'Mumbai, Maharashtra',
+    content: 'As parents, we were quite skeptical before enrolling our daughter, because there are so many programs out there that overpromise. But Pioneer Sports stood out with their honesty and structured approach. The team clearly explained every step and never created false expectations. Over time, we’ve seen our daughter become more confident, disciplined, and focused both on and off the field. It’s been a very positive experience for our family',
+    outcome: 'Daughter enrolled in Pioneer High Performance Program ',
+    avatar: 'RV',
+    avatarBg: 'linear-gradient(135deg, #d97706, #f59e0b)',
+    highlight: '#fbbf24',
   },
+  // {
+  //   name: 'Coach Rajesh Nair',
+  //   role: 'Football Coach · ISL Academy',
+  //   location: 'Kochi, Kerala',
+  //   content: 'I\'ve seen many consultancies come and go but Pioneer operates on a completely different level. The European methodology they\'ve embedded into their training philosophy is something I\'ve only seen in foreign setups. Hardik\'s Real Madrid education is clearly not just a credential — it\'s visible in every drill design and development framework. I actively recommend players to Pioneer because I know they\'ll come back better.',
+  //   outcome: 'Referred 12 players from his academy to Pioneer programs',
+  //   avatar: 'RN',
+  //   avatarBg: 'linear-gradient(135deg, #7c3aed, #a78bfa)',
+  //   highlight: '#a78bfa',
+  // },
 ]
 
 function TestimonialCard({ testimonial, index }) {
@@ -48,7 +58,7 @@ function TestimonialCard({ testimonial, index }) {
       <div className="flex gap-1 mb-5">
         {[...Array(5)].map((_, i) => (
           <svg key={i} className="w-4 h-4 text-gold-400" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
           </svg>
         ))}
       </div>
@@ -66,7 +76,7 @@ function TestimonialCard({ testimonial, index }) {
         style={{ background: `${testimonial.highlight}12`, color: testimonial.highlight, border: `1px solid ${testimonial.highlight}20` }}
       >
         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7"/>
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
         </svg>
         {testimonial.outcome}
       </div>
