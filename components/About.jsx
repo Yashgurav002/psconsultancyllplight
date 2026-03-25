@@ -20,7 +20,7 @@ const values = [
       </svg>
     ),
     title: 'Global Exposure',
-    desc: 'Direct pathways to clubs, academies, and programs across 5+ countries.',
+    desc: 'Direct pathways to clubs, academies, and programs across 3+ countries.',
   },
   {
     icon: (

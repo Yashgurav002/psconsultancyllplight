@@ -10,7 +10,7 @@ const navLinks = [
   { label: 'Services', href: '#services' },
   // { label: 'Programs', href: '#programs' },
   // { label: 'Partnerships', href: '#partnerships' },
-  { label: 'Our Academy', href: '#ouracademy' },
+  // { label: 'Our Academy', href: '#ouracademy' },
   { label: 'Testimonials', href: '#testimonials' },
   { label: 'Contact', href: '#contact' },
 ]
